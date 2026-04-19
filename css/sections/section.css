@@ -1,98 +1,76 @@
 /* =========================
-   SECTION HEADER
+   SECTION HEADER FULL RESPONSIVE
 ========================= */
 .section__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 0 20px;
+  gap: 12px;
+  padding: 20px 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.section__header img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .section__title {
-  font-size: var(--h1-font-size);
-  line-height: var(--h1-line-height);
+  font-size: 1.8rem; /* base mobile first */
   font-weight: bold;
-  color: var(--p-950);
-  text-transform: capitalize;
   text-align: center;
+  word-wrap: break-word;
+}
+
+.section__roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.section__roles span {
+  background-color: #eef1fc;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .section__description {
   text-align: center;
-  max-width: 65ch;
-  color: var(--n-500);
-  font-size: 1rem;
-  line-height: 1.6;
-  padding: 0 5px;
-}
-
-/* =========================
-   SCROLL OFFSET
-========================= */
-section,
-header,
-#contact {
-  scroll-margin-top: 100px;
+  font-size: 0.9rem;
+  max-width: 95%;
+  line-height: 1.5;
+  color: #555;
 }
 
 /* =========================
    TABLET (<=768px)
 ========================= */
 @media (max-width: 768px) {
-
-  /* NAV */
-  .navbar__menu {
-    display: none;
-  }
-
-  .section__header {
-    gap: 12px;
-    padding: 0 16px;
-  }
-
   .section__title {
-    font-size: calc(var(--h1-font-size) * 0.75);
-    line-height: 1.2;
-    word-wrap: break-word;
+    font-size: 2rem;
   }
-
-  .section__description {
-    font-size: 0.95rem;
-    max-width: 90%;
-    padding: 0 10px;
-  }
-
-  section,
-  header,
-  #contact {
-    scroll-margin-top: 80px;
+  .section__roles span {
+    font-size: 0.85rem;
+    padding: 3px 10px;
   }
 }
 
 /* =========================
-   MOBILE (<=480px)
+   DESKTOP (>=1024px)
 ========================= */
-@media (max-width: 480px) {
-
-  .section__header {
-    gap: 10px;
-    padding: 0 12px;
-  }
-
+@media (min-width: 1024px) {
   .section__title {
-    font-size: calc(var(--h1-font-size) * 0.65);
-    word-break: break-word;
+    font-size: 3rem;
   }
-
-  .section__description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    max-width: 95%;
-    padding: 0 8px;
-  }
-
-  body {
-    overflow-x: hidden;
+  .section__roles span {
+    font-size: 1rem;
+    padding: 5px 15px;
   }
 }
