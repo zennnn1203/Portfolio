@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  padding: 0 20px;
 }
 
 .section__title {
@@ -14,25 +15,82 @@
   font-weight: bold;
   color: var(--p-950);
   text-transform: capitalize;
+  text-align: center;
 }
 
 .section__description {
   text-align: center;
   max-width: 65ch;
   color: var(--n-500);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* =========================
-   RESPONSIVE
+   SCROLL OFFSET
 ========================= */
-@media (max-width: 768px) {
-  .navbar__menu {
-    display: none;
-  }
-}
-
 section,
 header,
 #contact {
   scroll-margin-top: 100px;
+}
+
+/* =========================
+   TABLET (<=768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* NAV */
+  .navbar__menu {
+    display: none;
+  }
+
+  /* HEADER */
+  .section__header {
+    gap: 12px;
+    padding: 0 16px;
+  }
+
+  .section__title {
+    font-size: calc(var(--h1-font-size) * 0.75);
+    line-height: 1.2;
+  }
+
+  .section__description {
+    font-size: 0.95rem;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* SCROLL FIX */
+  section,
+  header,
+  #contact {
+    scroll-margin-top: 80px;
+  }
+}
+
+/* =========================
+   MOBILE (<=480px)
+========================= */
+@media (max-width: 480px) {
+
+  .section__header {
+    gap: 10px;
+    padding: 0 12px;
+  }
+
+  .section__title {
+    font-size: calc(var(--h1-font-size) * 0.65);
+  }
+
+  .section__description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* EXTRA SAFETY */
+  body {
+    overflow-x: hidden;
+  }
 }
