@@ -1,17 +1,15 @@
-/* ======================
-   CERTIFICATES SECTION
-   ====================== */
-
-/* SECTION BACKGROUND */
+/* =========================
+   SECTION BACKGROUND
+========================= */
 .certificates__section {
-    padding: 60px 20px; /* khoảng cách trên/dưới, padding ngang cho mobile */
+    padding: 80px 0;
     background: transparent;
 }
 
 /* GRID */
 .certificates__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* tự động xuống dòng trên mobile */
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 40px;
 }
@@ -21,10 +19,9 @@
     background: #ffffffcc;
     backdrop-filter: blur(10px);
     border-radius: 16px;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #d1fae5;
     transition: 0.3s;
-    text-align: center; /* căn giữa nội dung */
 }
 
 .cert__card:hover {
@@ -33,16 +30,16 @@
 
 /* ICON */
 .cert__icon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: #d1fae5;
     color: #22c55e;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    font-size: 22px;
-    margin: 0 auto 15px; /* căn giữa icon */
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 /* TEXT */
@@ -59,9 +56,9 @@
 
 /* BUTTON */
 .cert__btn {
-    display: inline-block;
+    display: block;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px;
     border: 1px solid #22c55e;
     color: #22c55e;
     border-radius: 10px;
@@ -74,19 +71,42 @@
     color: white;
 }
 
-/* ======================
-   RESPONSIVE MOBILE
-   ====================== */
-@media (max-width: 600px) {
+/* =========================
+   MOBILE STYLES (RESPONSIVE)
+========================= */
+@media (max-width: 768px) {
+
+    /* Adjust the grid for mobile */
     .certificates__grid {
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
         gap: 15px;
     }
+
+    /* Adjust the card padding on mobile */
     .cert__card {
         padding: 15px;
     }
+
+    /* Adjust the icon size for mobile */
     .cert__icon {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    /* Adjust the card title and text size for mobile */
+    .cert__card h3 {
+        font-size: 16px;
+    }
+
+    .cert__card p {
+        font-size: 14px;
+    }
+
+    /* Adjust the button size for mobile */
+    .cert__btn {
+        font-size: 14px;
+        padding: 8px;
     }
 }
