@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/responsive.css"
+    />
+
+    <link
+      rel="icon"
+      href="./assets/rocket-icon.ico"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar__container">
+      <!-- Logo -->
+        <div class="navbar__logo">
+          <h2>Huy Quang</h2>
+        </div>
+
+      <!-- Menu -->
+      <ul class="navbar__menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#ProjectContainer">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div>
+
+      </div>
+    </div>
+  </nav>
+
+    <!--------------- 
+      Header
+    ----------------->
+    <header>
+      <div class="container header__container">
+        <!-- left column -->
+        <div class="header__column--left">
+          <!-- avatar -->
+          <div class="header__img"></div>
+
+          <div class="header__content--left">
+            <h2 class="header__title">Huy Quang</h2>
+            <div class="header__badge_container">
+              <div class="badge">Data Analyst</div>
+              <div class="badge">Data Engineer</div>
+              <div class="badge">Data Scientist</div>
+              <div class="badge">AI Engineer</div>
+            </div>
+            <p>
+              Mong muốn ứng tuyển vị trí <span>Junior Data Analyst.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div id="contact" class="header__column--right">
+          <h2 class="header__title">Thông Tin Liên Hệ</h2>
+          <p>
+            Gửi email cho mình tại:
+            <span>nguyenhuyquangvt@gmail.com</span>
+          </p>
+          <p>
+            Gọi cho mình tại:
+            <span>0854624879</span>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!--------------------------------- 
+      About Me - Giới Thiệu Bản Thân
+    ----------------------------------->
+    <section id="about" class="aboutMe__section">
+      <!-- Hình động 2 bên -->
+      <img
+        src="./assets/rocket-icon.svg"
+        alt="rocket icon"
+      />
+
+      <img
+        src="./assets/laptop-icon.svg"
+        alt="laptop icon"
+      />
+
+      <!-- Nội dung chính -->
+      <div class="aboutMe__container">
+        <div class="aboutMe__content_container">
+          <h1 class="section__title">Giới Thiệu Bản Thân</h1>
+
+          <p class="section__description">
+            Xin chào! Mình là Huy Quang. 
+            Cựu sinh viên khoa Toán, khóa 2020, trường Đại học Khoa học Tự nhiên - Đại học Quốc gia TP.HCM (HCMUS), 
+            chuyên ngành Xác suất Thống kê. Hiện tại là học viên cao học Khóa 33 ngành Khoa học dữ liệu của HCMUS. 
+            Mình có niềm đam mê với thống kê và dữ liệu, Mục tiêu của mình là phát triển lâu dài trong ngành Khoa học dữ liệu.
+
+          </p>
+
+          <div class="CTA">
+            <a
+              href="./assets/CV_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="primaryButton"
+              download
+              >Tải CV</a
+            >
+
+            <a
+              href="#ProjectContainer"
+              class="outlineButton"
+              >Xem Dự Án</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience__section">
+  <div class="container">
+
+    <div class="section__header">
+      <h1 class="section__title">Kinh nghiệm làm việc</h1>
+      <p class="section__description">
+        Một số kinh nghiệm thực tế trong quá trình học tập và làm việc.
+      </p>
+    </div>
+
+    <div class="experience__timeline">
+
+      <!-- item 1 -->
+      <div class="experience__item">
+        <div class="experience__dot"></div>
+
+        <div class="experience__content">
+          <h3>AI Engineer - Penguin Secret Agency</h3>
+          <span>10/2025 – 12/2025</span>
+          <p>
+            Thiết kế và phát triển AI agent để xử lý các truy vấn liên quan đến sản phẩm như giá, tồn kho, số lượng bán và mô tả sản phẩm dựa trên dữ liệu có cấu trúc lưu trong PostgreSQL.<br>
+            Xây dựng backend bằng FastAPI tích hợp LangChain để điều phối workflow của agent và hỗ trợ truy xuất dữ liệu theo dạng tool.<br>
+            Sử dụng LLM chỉ để tổng hợp và diễn giải câu trả lời, đảm bảo đầu ra rõ ràng, tự nhiên nhưng dựa hoàn toàn trên dữ liệu đã được xác thực, giảm thiểu thông tin ảo.<br>
+            Thiết kế pipeline xử lý truy vấn theo intent (giá, tồn kho, thông tin sản phẩm) và tự động gọi các hàm truy vấn database tương ứng để trả kết quả theo thời gian thực.
+          </p>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="experience__item">
+        <div class="experience__dot"></div>
+
+        <div class="experience__content">
+          <h3>Data Analyst Intern - PetroVietnam Cà Mau Fertilizer JSC (PVCFC)</h3>
+          <span>10/2024 – 03/2025</span>
+          <p>
+            Thiết kế và triển khai mô hình dữ liệu (star schema) cho các mảng tài chính, bán hàng, tồn kho, sản xuất và công nợ.<br>
+            Xây dựng và tối ưu pipeline dữ liệu bằng Python (Pandas) và SQL, xử lý hơn 100.000 bản ghi mỗi tháng.<br>
+            Phát triển dashboard Power BI để theo dõi KPI và hỗ trợ ra quyết định.<br>
+            Phân tích dữ liệu (EDA), phát hiện hàng tồn chậm luân chuyển và các điểm nghẽn vận hành.
+          </p>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="experience__item">
+        <div class="experience__dot"></div>
+
+        <div class="experience__content">
+          <h3>Teaching Assistant - VNUHCM University of Science (HCMUS)</h3>
+          <span>10/2024 – 01/2025</span>
+          <p>
+            Giảng dạy thực hành Data Visualization bằng Power BI, hướng dẫn sinh viên về ETL và mô hình dữ liệu.<br>
+            Hỗ trợ xây dựng dashboard, thiết kế trực quan hóa và xử lý các vấn đề liên quan đến DAX.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</section>
+
+    <!--------------------------------- 
+      Skills - Kỹ Năng
+    ----------------------------------->
+    <section id="skills" class="skills__section">
+      <div class="container skills__container">
+        <!-- header -->
+        <div class="section__header">
+          <h1 class="section__title">Kỹ năng & Chuyên môn</h1>
+
+          <p class="section__description">
+            Là một Data Analyst mới vào nghề, với nền tảng vững chắc về Thống kê và Khoa học Dữ liệu, 
+            mình có kinh nghiệm thực tế trong xử lý dữ liệu, phân tích khám phá (EDA) và 
+            xây dựng các giải pháp dựa trên dữ liệu. 
+          </p>
+        </div>
+
+        <!-- grid -->
+        <div class="skills__grid_container">
+          <!-- grid item 1 -->
+          <div class="skills__grid_item"></div>
+
+          <!-- grid item 2 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img
+                  src="./assets/check-icon.svg"
+                  alt="check-icon"
+                />
+                <h2>Công cụ & Công nghệ</h2>
+              </div>
+              <p>
+                Mình có kinh nghiệm làm việc Python, SQL và Power BI, với kinh nghiệm xây dựng pipeline ETL, 
+                phân tích dữ liệu quy mô lớn và cung cấp các insight hỗ trợ ra quyết định kinh doanh.
+              </p>
+            </div>
+
+            <!-- skill logos -->
+            <div>
+              <!-- list 1 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                     />
+                    <span>Python</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftsqlserver.svg"
+                    />
+                    <span>SQL SERVER</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg"
+                    />
+                    <span>Power BI</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
+                    <span>github</span>
+                  </div>
+                </div>
+                <div class="icons-list">
+
+                  <div class="icon-badges">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                     />
+                    <span>Python</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftsqlserver.svg"
+                    />
+                    <span>SQL SERVER</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg"
+                    />
+                    <span>Power BI</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
+                    <span>github</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- list 2 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
+                    <span>github</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg"
+                    />
+                    <span>Power BI</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftsqlserver.svg"
+                    />
+                    <span>SQL SERVER</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                     />
+                    <span>Python</span>
+                  </div>
+                </div>
+
+                <div class="icons-list">
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
+                    <span>github</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg"
+                    />
+                    <span>Power BI</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftsqlserver.svg"
+                    />
+                    <span>SQL SERVER</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                     />
+                    <span>Python</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 3 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img
+                  src="./assets/check-icon.svg"
+                  alt="check icon"
+                />
+                <h2>Kỹ Năng Mềm</h2>
+              </div>
+              <p>
+                Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với thái
+                độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi trường làm
+                việc nhóm năng động.
+              </p>
+            </div>
+
+            <div class="softSkills__container">
+              <div class="softSkills_badge">
+                <p>Giao tiếp chuyên nghiệp</p>
+              </div>
+
+              <div class="softSkills_badge">
+                <p>Quản lý thời gian hiệu quả</p>
+              </div>
+              <div class="softSkills_badge">
+                <p>Đáng tin cậy</p>
+              </div>
+              <div class="softSkills_badge">
+                <p>Ham học hỏi</p>
+              </div>
+
+              <div class="softSkills__book_icons">
+                <img
+                  src="./assets/closed-book.svg"
+                  alt="closed book icon"
+                />
+                <img
+                  src="./assets/closed-book.svg"
+                  alt="closed book icon"
+                />
+                <img
+                  src="./assets/closed-book.svg"
+                  alt="closed book icon"
+                />
+                <img
+                  src="./assets/closed-book.svg"
+                  alt="closed book icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 4 -->
+          <div class="skills__grid_item"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Projects - Dự Án
+    ----------------------------------->
+<section class="projects__section" id="ProjectContainer">
+  <div class="container projects_container">
+
+    <!-- header -->
+    <div class="section__header">
+      <h1 class="section__title">Dự Án Cá Nhân</h1>
+      <p class="section__description">
+        Các dự án tập trung vào phân tích dữ liệu, xây dựng pipeline ETL và khai thác insight 
+        nhằm hỗ trợ ra quyết định dựa trên dữ liệu.
+      </p>
+    </div>
+
+    <!-- cards -->
+    <div class="projects__cards_container">
+
+      <!-- Project 1 -->
+      <a href="https://github.com/zennnn1203/ETL-PBI-Py" target="_blank">
+        <div class="projects_cards">
+          <div class="projects__cards_wrapper">
+            <img src="./assets/project1.png" class="projects__cards_img" />
+          </div>
+          <div class="projects__cards_titles">
+            <h4>Project 01</h4>
+            <h3>ETL Sales Data Analysis</h3>
+            <p>
+              Xây dựng pipeline ETL end-to-end xử lý 9K+ bản ghi dữ liệu bán hàng 
+              bằng Python (Pandas, NumPy) và thực hiện EDA.
+            </p>
+            <p>
+              Thiết kế dashboard Power BI theo dõi doanh thu ~2.3M$ và lợi nhuận ~286K$, 
+              phân tích theo khu vực, sản phẩm và khách hàng.
+            </p>
+            <p>
+              Phân tích hiệu suất kinh doanh và tác động của discount, phát hiện 
+              các trường hợp lỗ khi giảm giá >20%.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="https://github.com/Zennnnnnnnnnn/AB-testing" target="_blank">
+        <div class="projects_cards">
+          <div class="projects__cards_wrapper">
+            <img src="./assets/project2.jpg" class="projects__cards_img" />
+          </div>
+          <div class="projects__cards_titles">
+            <h4>Project 02</h4>
+            <h3>Game Tutorial A/B Testing</h3>
+            <p>
+              Thực hiện A/B Testing với Permutation Test trên 800,000 người dùng 
+              để đánh giá hiệu quả tutorial mới.
+            </p>
+            <p>
+              Kết quả cho thấy version 1.6.0 có tỷ lệ hoàn thành cao hơn đáng kể, 
+              cải thiện onboarding.
+            </p>
+            <p>
+              Đề xuất triển khai rộng rãi nhằm tăng retention và trải nghiệm người dùng.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <a href="https://github.com/zennnn1203/Momo-ETL/tree/main" target="_blank">
+        <div class="projects_cards">
+          <div class="projects__cards_wrapper">
+            <img src="./assets/project3.png" class="projects__cards_img" />
+          </div>
+          <div class="projects__cards_titles">
+            <h4>Project 03</h4>
+            <h3>MoMo Top-Up Analysis</h3>
+            <p>
+              Xây dựng ETL pipeline xử lý dữ liệu giao dịch bằng Python và SQL Server, 
+              đảm bảo dữ liệu sạch và nhất quán.
+            </p>
+            <p>
+              Phân tích hành vi người dùng: 75% giao dịch dưới 50,000 VND, 
+              nhóm tuổi chính 23–32.
+            </p>
+            <p>
+              Áp dụng RFM và K-means phân cụm khách hàng thành 6 nhóm, 
+              hỗ trợ chiến lược marketing và tăng doanh thu.
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+   <section id="certificates" class="certificates__section">
+  <div class="container">
+
+    <div class="section__header">
+      <h1 class="section__title">Chứng chỉ</h1>
+      <p class="section__description">
+        Các chứng chỉ chuyên môn
+      </p>
+    </div>
+
+    <div class="certificates__grid">
+
+      <!-- DataCamp -->
+      <div class="cert__card">
+        <div class="cert__icon">📊</div>
+        <h3>Data Analyst with R</h3>
+        <p>by DataCamp</p>
+        <a href="https://www.datacamp.com/statement-of-accomplishment/track/7c713099194f0b0204ec59c9f0d42095f0c5f40f" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+      <div class="cert__card">
+        <div class="cert__icon">📈</div>
+        <h3>Statistics Fundamentals with R</h3>
+        <p>by DataCamp</p>
+        <a href="https://www.datacamp.com/statement-of-accomplishment/track/1d5725f1a1b31dc0f040153f31ae32f69235fc9e" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+      <div class="cert__card">
+        <div class="cert__icon">🧠</div>
+        <h3>Data Scientist in R</h3>
+        <p>by DataCamp</p>
+        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/87a74de2b09e336dc9a3cc9601595c61c0960749" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+      <!-- Coursera -->
+      <div class="cert__card">
+        <div class="cert__icon">🕒</div>
+        <h3>Google Data Analytics</h3>
+        <p>by Coursera</p>
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/5I1UY4K2HH3Y" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+      <!-- HackerRank -->
+      <div class="cert__card">
+        <div class="cert__icon">📦</div>
+        <h3>SQL (Advanced)</h3>
+        <p>by HackerRank</p>
+        <a href="https://www.hackerrank.com/certificates/504fbad065ea" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+      <!-- FreeCodeCamp -->
+      <div class="cert__card">
+        <div class="cert__icon">💻</div>
+        <h3>Scientific Computing with Python</h3>
+        <p>by FreeCodeCamp</p>
+        <a href="https://www.freecodecamp.org/certification/fccaa48a95b-d382-40a9-a475-7e695d5cc584/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer" class="cert__btn">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+</section>
+    
+
+    <!--------------------------------- 
+      Footer
+    ----------------------------------->
+    <footer>
+      <div class="container">
+        <p></p>
+      </div>
+    </footer>
+  </body>
+</html>
