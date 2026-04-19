@@ -24,6 +24,7 @@
   color: var(--n-500);
   font-size: 1rem;
   line-height: 1.6;
+  padding: 0 5px;
 }
 
 /* =========================
@@ -45,7 +46,6 @@ header,
     display: none;
   }
 
-  /* HEADER */
   .section__header {
     gap: 12px;
     padding: 0 16px;
@@ -54,15 +54,15 @@ header,
   .section__title {
     font-size: calc(var(--h1-font-size) * 0.75);
     line-height: 1.2;
+    word-wrap: break-word;
   }
 
   .section__description {
     font-size: 0.95rem;
-    max-width: 100%;
+    max-width: 90%;
     padding: 0 10px;
   }
 
-  /* SCROLL FIX */
   section,
   header,
   #contact {
@@ -82,14 +82,16 @@ header,
 
   .section__title {
     font-size: calc(var(--h1-font-size) * 0.65);
+    word-break: break-word;
   }
 
   .section__description {
     font-size: 0.9rem;
     line-height: 1.5;
+    max-width: 95%;
+    padding: 0 8px;
   }
 
-  /* EXTRA SAFETY */
   body {
     overflow-x: hidden;
   }
