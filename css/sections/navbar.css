@@ -10,18 +10,19 @@
   background: rgba(2, 6, 23, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 0; /* Increase the padding to make the navbar bigger */
 }
 
 .navbar__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 0 20px; /* Increase horizontal padding */
 }
 
 /* Logo */
 .navbar__logo h2 {
-  font-size: 22px;
+  font-size: 24px; /* Increase logo size */
   color: #ffffff;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .navbar__menu a {
-  font-size: 14px;
+  font-size: 16px; /* Increase font size */
   color: #ffffff;
   transition: 0.3s;
 }
@@ -62,9 +63,12 @@
 
 .menu-icon {
   display: none;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increase icon size */
   color: white;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Move the icon to the top right corner */
 }
 
 .navbar__menu {
